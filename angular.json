@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "web-do-an": {
+    "my-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/web-do-an",
+            "outputPath": "dist/my-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,13 +25,19 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
+            "allowedCommonJsDependencies": [
+              "sweetalert2"
+            ],
             "assets": [
               "src/favicon.ico",
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/assets/styles/global.scss",
+              "src/assets/styles/custom.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/sweetalert2/dist/sweetalert2.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -69,10 +75,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "web-do-an:build:production"
+              "browserTarget": "my-web:build:production"
             },
             "development": {
-              "browserTarget": "web-do-an:build:development"
+              "browserTarget": "my-web:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +86,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "web-do-an:build"
+            "browserTarget": "my-web:build"
           }
         },
         "test": {
@@ -97,8 +103,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/assets/styles/global.scss",
+              "src/assets/styles/custom.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "node_modules/sweetalert2/dist/sweetalert2.min.css"
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
