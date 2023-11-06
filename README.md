@@ -82,9 +82,12 @@ Bộ nhớ đệm và CDN: Sử dụng bộ nhớ đệm và Content Delivery Ne
 - Manager learning technology
 - Manager blog technology
 - Manager learning eng
+- Manager lang
 - Manager algorithm
-- Manager shortcut VS CODE
-- Manager folder file like google driver
+- Manager shortcut VS CODE and Jetbin
+- Manager folder file like google driver - read file pdf
+- Manager books [https://eloquentjavascript.net/], [] 
+- App Music  
 - Server code
 - Auth app
 - Secure app

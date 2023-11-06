@@ -10,6 +10,7 @@ const routes: Routes = [
   },
   {
     path: "**",
+    title: 'not found page',
     component: Page404Component,
   },
 ];

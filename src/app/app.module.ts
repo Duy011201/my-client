@@ -7,7 +7,6 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HomeComponent } from "./pages/home/home.component";
 import { Page404Component } from "./pages/page404/page404.component";
-import { ProductComponent } from "./pages/manager-product/product.component";
 import { UserComponent } from "./pages/manager-user/user.component";
 import { LoginComponent } from "./pages/manager-auth/login/login.component";
 import { RegisterComponent } from "./pages/manager-auth/register/register.component";
@@ -21,7 +20,6 @@ import { ForgotPasswordComponent } from "./pages/manager-auth/forgot-password/fo
     AppComponent,
     HomeComponent,
     Page404Component,
-    ProductComponent,
     UserComponent,
     LoginComponent,
     RegisterComponent,

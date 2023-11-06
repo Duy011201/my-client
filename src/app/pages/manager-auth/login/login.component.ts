@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { error } from "../../../common/sweetalert2";
-import { isEmptyNullUndefined } from "../../../common/core";
+import { error } from "@app/common/sweetalert2";
+import { isEmptyNullUndefined } from "@app/common/core";
 import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
@@ -9,9 +9,9 @@ import { ActivatedRoute, Router } from "@angular/router";
   styleUrls: ["./login.component.scss"],
 })
 export class LoginComponent implements OnInit {
-  isLoading = true;
-  email = "";
-  password = "";
+  public isLoading = true;
+  public email = "";
+  public password = "";
 
   constructor(
     private route: ActivatedRoute,
@@ -27,6 +27,15 @@ export class LoginComponent implements OnInit {
   }
 
   public onSubmit(): void {
-    error("Có lỗi xảy ra!");
+    if (isEmptyNullUndefined(this.email)) {
+      error("Có lỗi xảy ra!");
+      return;
+    }
+
+    if (isEmptyNullUndefined(this.password)) {
+      error("Có lỗi xảy ra!");
+      return;
+    }
+
   }
 }

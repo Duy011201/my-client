@@ -1,3 +1,7 @@
+import {CONST} from "@app/const/constant";
+
+const REG_EMAIL: any = CONST.REG_EMAIL;
+
 export function isEmptyNullUndefined(value: any) {
   if (
     value === null ||
@@ -11,6 +15,9 @@ export function isEmptyNullUndefined(value: any) {
   return false;
 }
 
-// export function isValidEmail(value: string): void {}
+export function isValidEmail(value: string): boolean {
+  return REG_EMAIL.test(value);
+}
+
 //
 // export function isValidPassword(value: string): void {}

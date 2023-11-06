@@ -8,10 +8,10 @@ import { ActivatedRoute, Router } from "@angular/router";
   styleUrls: ["./register.component.scss"],
 })
 export class RegisterComponent {
-  isLoading = true;
-  email = "";
-  password = "";
-  username = "";
+  public isLoading = true;
+  public email = "";
+  public password = "";
+  public username = "";
 
   constructor(
     private route: ActivatedRoute,

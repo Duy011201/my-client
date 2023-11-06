@@ -10,14 +10,6 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
-    path: "product",
-    title: "product page",
-    loadChildren: () =>
-      import("./pages/manager-product/product.module").then(
-        m => m.ProductModule
-      ),
-  },
-  {
     path: "user",
     title: "user page",
     loadChildren: () =>
@@ -31,6 +23,7 @@ const routes: Routes = [
   },
   {
     path: "**",
+    title: 'not found page',
     component: Page404Component,
   },
 ];

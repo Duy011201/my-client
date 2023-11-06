@@ -8,10 +8,10 @@ import { error } from "@app/common/sweetalert2";
   styleUrls: ["./forgot-password.component.scss"],
 })
 export class ForgotPasswordComponent {
-  isLoading = true;
-  email = "";
-  password = "";
-  isCode = false;
+  public isLoading = true;
+  public email = "";
+  public password = "";
+  public isCode = false;
 
   constructor(
     private route: ActivatedRoute,

@@ -8,18 +8,22 @@ import { ForgotPasswordComponent } from "@app/pages/manager-auth/forgot-password
 const routes: Routes = [
   {
     path: "login",
+    title: 'login page',
     component: LoginComponent,
   },
   {
     path: "register",
+    title: 'register page',
     component: RegisterComponent,
   },
   {
     path: "forgot-password",
+    title: 'forgot password page',
     component: ForgotPasswordComponent,
   },
   {
     path: "**",
+    title: 'not found page',
     component: Page404Component,
   },
 ];
