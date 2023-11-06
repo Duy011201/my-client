@@ -4,6 +4,8 @@ export const CONST = {
   MSG: {
     IS_VALID_EMAIL: 'Email không đúng định dạng',
 
+    NOT_FOUND_DATA: 'Không tìm thấy dữ liệu!',
+    NOT_FOUND_PAGE: 'Lỗi 404! Không tìm thấy trang web!',
     NOT_FOUND_EMAIL: 'Không tìm thấy email!',
     NOT_FOUND_PASSWORD: 'Không tìm thấy password!',
   },

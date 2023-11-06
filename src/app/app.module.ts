@@ -14,6 +14,7 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LoadingComponent } from "./components/loading/loading.component";
 import { ForgotPasswordComponent } from "./pages/manager-auth/forgot-password/forgot-password.component";
+import { WorkflowComponent } from './pages/workflow/workflow.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ForgotPasswordComponent } from "./pages/manager-auth/forgot-password/fo
     FooterComponent,
     LoadingComponent,
     ForgotPasswordComponent,
+    WorkflowComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],

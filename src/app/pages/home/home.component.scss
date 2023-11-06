@@ -1,3 +1,5 @@
+@import '../../../assets/styles/theme.scss';
+
 .parallax {
   position: relative;
   display: flex;
@@ -8,7 +10,7 @@
 
   #title {
     font-size: 70px;
-    color: var(--cl-white);
+    color: $cl-white;
     position: absolute;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
   }
@@ -27,16 +29,16 @@
   background-color: #003329;
   position: relative;
   padding: 100px;
-  color: var(--cl-white);
+  color: $cl-white;
   text-align: justify;
 
   h1 {
-    color: var(--cl-white);
+    color: $cl-white;
     font-size: 56px;
   }
 
   h3 {
-    color: var(--cl-white);
+    color: $cl-white;
     font-size: 32px;
   }
 

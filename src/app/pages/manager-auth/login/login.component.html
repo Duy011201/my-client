@@ -42,22 +42,14 @@
             Remember me
           </small>
         </div>
-        <span
-          (click)="redirectTo('auth/forgot-password')"
-          class="form-text text-muted form-check-label text-decoration-underline"
-        >
-          Forgot password?
-        </span>
+        <small (click)="redirectTo('auth/forgot-password')"
+               class="form-text text-muted form-check-label text-decoration-underline">Forgot password?
+        </small>
       </div>
       <button type="submit" class="btn btn-primary mt-10 w-100">Login</button>
       <small class="form-text text-muted form-check-label mt-10">
         Don't have an account?
-        <span
-          class="text-decoration-underline ml-5"
-          (click)="redirectTo('auth/register')"
-        >
-          Register
-        </span>
+        <span class="text-decoration-underline ml-5" (click)="redirectTo('auth/register')">Register</span>
       </small>
     </form>
   </div>

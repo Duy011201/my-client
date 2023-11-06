@@ -1,1 +1,9 @@
-<p>time {{ count }}</p>
+<div class="container-fluid">
+  <div class="content text-center">
+    <h4 class="pt-20">{{notFoundPage}}</h4>
+    <span class="cursor-pointer" (click)="redirectTo('auth/login')">Chuyển trang ngay</span>
+    <h6 class="pt-10">Hệ thống sẽ tự chuyển trang sau {{ startTimeRedirect }} giây</h6>
+  </div>
+</div>
+
+

@@ -76,7 +76,7 @@ Bộ nhớ đệm và CDN: Sử dụng bộ nhớ đệm và Content Delivery Ne
 
 # Problem
 
-- Blog personal                               (this week)
+- Blog personal                               100%
 - Manager folder can download
 - Manager workflow                            (this week)
 - Manager learning technology
@@ -93,3 +93,7 @@ Bộ nhớ đệm và CDN: Sử dụng bộ nhớ đệm và Content Delivery Ne
 - Secure app
 - Performance app
 - Setup map
+
+# Database
+
+- workflow
