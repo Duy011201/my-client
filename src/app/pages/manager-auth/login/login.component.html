@@ -1,7 +1,5 @@
 <app-loading *ngIf="isLoading"></app-loading>
-<div
-  class="container-fluid d-flex justify-content-center align-items-center vh-100 wrap-login bg-lazy"
->
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100 wrap-login bg-lazy">
   <div class="wrap-content p-5 rounded">
     <h2 class="text-center">Login</h2>
     <form (submit)="onSubmit()">
@@ -42,14 +40,14 @@
             Remember me
           </small>
         </div>
-        <small (click)="redirectTo('auth/forgot-password')"
+        <small (click)="redirectTo(URL_FORGOT_PASSWORD)"
                class="form-text text-muted form-check-label text-decoration-underline">Forgot password?
         </small>
       </div>
       <button type="submit" class="btn btn-primary mt-10 w-100">Login</button>
       <small class="form-text text-muted form-check-label mt-10">
         Don't have an account?
-        <span class="text-decoration-underline ml-5" (click)="redirectTo('auth/register')">Register</span>
+        <span class="text-decoration-underline ml-5" (click)="redirectTo(URL_REGISTER)">Register</span>
       </small>
     </form>
   </div>

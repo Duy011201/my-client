@@ -59,13 +59,9 @@ Optimize Images: Nén và tối ưu hóa hình ảnh trước khi sử dụng ch
 Prerendering: Sử dụng prerendering để tạo trang tĩnh cho các trang quan trọng, giúp cải thiện SEO và hiệu suất.
 
 *NgIf và ngFor: Sử dụng cẩn thận với *ngIf và *ngFor để tránh tạo nhiều thành phần không cần thiết trong DOM.
-
 Profiler và Lighthouse: Sử dụng các công cụ như Angular Profiler và Lighthouse để theo dõi và đánh giá hiệu năng ứng dụng của bạn.
-
 Server-Side Rendering (SSR): Nếu có yêu cầu, xem xét triển khai Server-Side Rendering để cải thiện SEO và hiệu suất.
-
 Bộ nhớ đệm và CDN: Sử dụng bộ nhớ đệm và Content Delivery Network (CDN) để tối ưu hóa việc tải tài nguyên như hình ảnh, mã JavaScript, và CSS.
-
 ## Science
 
 - virus github
@@ -76,18 +72,16 @@ Bộ nhớ đệm và CDN: Sử dụng bộ nhớ đệm và Content Delivery Ne
 
 # Problem
 
-- Blog personal                               100%
-- Manager folder can download
-- Manager workflow                            (this week)
-- Manager learning technology
-- Manager blog technology
+- Blog personal                               100%   
+- Manager workflow
+- Manager blog technology                     (this week)
+- Manager folder driver               phục vụ cho workflow, book, music 
 - Manager learning eng
 - Manager lang
 - Manager algorithm
-- Manager shortcut VS CODE and Jetbin
-- Manager folder file like google driver - read file pdf
-- Manager books [https://eloquentjavascript.net/], [] 
-- App Music  
+- Manager books [https://eloquentjavascript.net/], []
+- App Music                                  
+  
 - Server code
 - Auth app
 - Secure app
@@ -97,3 +91,21 @@ Bộ nhớ đệm và CDN: Sử dụng bộ nhớ đệm và Content Delivery Ne
 # Database
 
 - workflow
+  + id
+  + timeCreate
+  + timeModify
+  + treeLevel
+  + parentID
+  + title
+  + desc
+  + userID
+  + status
+  + dateStart
+  + dateEnd
+  + priority
+  + tag
+  + projectID
+  + subTaskID
+
+- blog tech
+  + 

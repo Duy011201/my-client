@@ -1,7 +1,6 @@
 import {Component, OnInit} from "@angular/core";
-import {CONST} from "@app/const/constant";
+import {CONST} from "@app/core/const/constant";
 import {Router} from "@angular/router";
-import { isEmptyNullUndefined } from "@app/common/core";
 
 @Component({
   selector: "app-page404",
@@ -9,10 +8,10 @@ import { isEmptyNullUndefined } from "@app/common/core";
   styleUrls: ["./page404.component.scss"],
 })
 export class Page404Component implements OnInit {
-  private infoUser: any;
   public startTimeRedirect: number = 15;
   private lastTimeRedirect: number = 0;
   public notFoundPage = CONST.MSG.NOT_FOUND_PAGE;
+  public URL_LOGIN = CONST.URL_LOGIN;
 
   constructor(
     private router: Router
@@ -20,16 +19,14 @@ export class Page404Component implements OnInit {
   }
 
   ngOnInit(): void {
-    if (isEmptyNullUndefined(this.infoUser)) {
-      const countdownInterval = setInterval(() => {
-        this.startTimeRedirect -= 1;
+    const countdownInterval = setInterval(() => {
+      this.startTimeRedirect -= 1;
 
-        if (this.startTimeRedirect === this.lastTimeRedirect) {
-          clearInterval(countdownInterval);
-          this.redirectTo('auth/login');
-        }
-      }, 1000);
-    }
+      if (this.startTimeRedirect === this.lastTimeRedirect) {
+        clearInterval(countdownInterval);
+        this.redirectTo(CONST.URL_LOGIN);
+      }
+    }, 1000);
   }
 
   public redirectTo(url: string) {

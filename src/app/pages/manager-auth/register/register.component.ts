@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
-import { error } from "@app/common/sweetalert2";
+import { error } from "@app/core/common/sweetalert2";
 import { ActivatedRoute, Router } from "@angular/router";
+import {CONST} from "@app/core/const/constant";
 
 @Component({
   selector: "app-register",
@@ -9,6 +10,7 @@ import { ActivatedRoute, Router } from "@angular/router";
 })
 export class RegisterComponent {
   public isLoading = true;
+  public URL_LOGIN = CONST.URL_AUTH + '/' + CONST.URL_LOGIN;
   public email = "";
   public password = "";
   public username = "";

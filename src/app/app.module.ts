@@ -14,7 +14,9 @@ import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { LoadingComponent } from "./components/loading/loading.component";
 import { ForgotPasswordComponent } from "./pages/manager-auth/forgot-password/forgot-password.component";
-import { WorkflowComponent } from './pages/workflow/workflow.component';
+import { WorkflowComponent } from './pages/manager-workflow/workflow.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { BlogComponent } from './pages/manager-blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { WorkflowComponent } from './pages/workflow/workflow.component';
     LoadingComponent,
     ForgotPasswordComponent,
     WorkflowComponent,
+    DashboardComponent,
+    BlogComponent,
   ],
   imports: [BrowserModule, FormsModule, AppRoutingModule, HttpClientModule],
   providers: [],

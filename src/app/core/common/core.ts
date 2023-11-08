@@ -1,4 +1,4 @@
-import {CONST} from "@app/const/constant";
+import { CONST } from "@app/core/const/constant";
 
 const REG_EMAIL: any = CONST.REG_EMAIL;
 
@@ -13,6 +13,10 @@ export function isEmptyNullUndefined(value: any) {
     return true;
   }
   return false;
+}
+
+export function logoutUser() {
+  localStorage.clear();
 }
 
 export function isValidEmail(value: string): boolean {

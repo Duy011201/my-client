@@ -1,7 +1,6 @@
 import {Component, ElementRef, OnInit, Renderer2} from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import {CONST} from "@app/const/constant";
-import {isEmptyNullUndefined} from "@app/common/core";
+import {CONST} from "@app/core/const/constant";
 
 @Component({
   selector: "app-home",
@@ -10,6 +9,7 @@ import {isEmptyNullUndefined} from "@app/common/core";
 })
 export class HomeComponent implements OnInit {
   public isLoading = false;
+  public URL_LOGIN = CONST.URL_AUTH + '/' + CONST.URL_LOGIN;
   private textElement: HTMLElement | null = null;
   private textToType: string = CONST.LIST_SKILL;
   private typeSpeed: number = 100; // Tốc độ gõ
