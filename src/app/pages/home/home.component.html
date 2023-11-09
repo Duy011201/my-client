@@ -1,1 +1,60 @@
-<p>home works!</p>
+<app-loading *ngIf="isLoading"></app-loading>
+<div class="container-fluid m-0 p-0 wrap-home vh-100 bg-lazy">
+  <div class="parallax">
+    <img src="../../../assets/images/bg-home-hill1.png" id="hill1" alt="hill1" />
+    <img src="../../../assets/images/bg-home-hill2.png" id="hill2" alt="hill2"/>
+    <img src="../../../assets/images/bg-home-hill3.png" id="hill3" alt="hill3"/>
+    <img src="../../../assets/images/bg-home-hill4.png" id="hill4" alt="hill4"/>
+    <img src="../../../assets/images/bg-home-hill5.png" id="hill5" alt="hill5"/>
+    <img src="../../../assets/images/bg-home-tree.png" id="tree" alt="tree"/>
+    <h1 id="title" class="fw-700">Software developer</h1>
+    <img src="../../../assets/images/bg-home-leaf.png" id="leaf" alt="leaf"/>
+    <img src="../../../assets/images/bg-home-plant.png" id="plant" alt="plant"/>
+  </div>
+
+  <section class="content" id="content">
+    <h3 class="fw-700 m-0 p-0">Hello, It`s Me</h3>
+    <h1 class="fw-700 m-0 p-0">Name</h1>
+    <h3 class="fw-700 m-0 p-0">And I am <span id="text" class="fw-700"></span></h3>
+    <div class="d-flex justify-content-center align-content-center gap-5 mt-20 mb-20">
+      <i id="html" class="fa-brands fa-html5 font-60"></i>
+      <i id="css" class="fa-brands fa-css3-alt font-60"></i>
+      <i id="js" class="fa-brands fa-square-js font-60"></i>
+      <i id="java" class="fa-brands fa-java font-60"></i>
+      <i id="angular" class="fa-brands fa-angular font-60"></i>
+      <i id="react" class="fa-brands fa-react font-60"></i>
+    </div>
+    <p>
+      lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet,
+      consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum
+      dolor sit amet, consectetur adiplorem ipsum dolor sit amet, consectetur
+      adiplorem ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit
+      amet, consectetur adiplorem ipsum dolor sit amet, consectetur adiplorem
+      ipsum dolor sit amet, consectetur adiplorem ipsum dolor sit amet,
+      consectetur adiplorem ipsum dolor sit amet, consectetur adip lorem ipsum
+      dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur
+      adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit
+      amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip
+    </p>
+    <p>
+      lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet,
+      consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum
+      dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur
+      adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit
+      amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem
+      ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet,
+      consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum
+      dolor sit amet, consectetur adip lorem ipsum dolor sit amet, consectetur
+      adip lorem ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit
+      amet, consectetur adip lorem ipsum dolor sit amet, consectetur adip lorem
+      ipsum dolor sit amet, consectetur adip lorem ipsum dolor sit amet,
+      consectetur adip lorem ipsum dolor sit amet, consectetur adip
+    </p>
+    <div class="d-flex justify-content-center align-content-center">
+      <button type="button" class="btn btn-success p-2 font-22 text-uppercase cursor-pointer" (click)="redirectTo(URL_LOGIN)">
+        Login now
+      </button>
+    </div>
+  </section>
+  <!--  <Footer/>-->
+</div>

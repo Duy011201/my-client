@@ -1,4 +1,4 @@
-# WebDoAn
+# MyWeb
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
 
@@ -36,7 +36,11 @@ ng generate module [name]
 
 ## Optimize Performance
 
+<<<<<<< HEAD
 Lazy Loading: Sử dụng tính năng lazy loading để tải các module chỉ khi cần thiết. Điều này giúp giảm thời gian tải ban đầu và tối ưu hóa tải trang.
+=======
+- Lazy Loading: Sử dụng tính năng lazy loading để tải các module chỉ khi cần thiết. Điều này giúp giảm thời gian tải ban đầu và tối ưu hóa tải trang.
+>>>>>>> dev
 
 Ahead-of-Time (AOT) Compilation: Sử dụng AOT để biên dịch ứng dụng trước khi triển khai, giúp giảm thời gian khởi động ứng dụng và tối ưu hóa hiệu suất.
 
@@ -54,14 +58,71 @@ NgRx/store: Sử dụng trạng thái quản lý của NgRx/store để quản l
 
 Optimize Images: Nén và tối ưu hóa hình ảnh trước khi sử dụng chúng trong ứng dụng. Sử dụng các định dạng hình ảnh hiệu quả như WebP.
 
+<<<<<<< HEAD
 Bundle Splitting: Chia các tệp mã thành các gói nhỏ hơn để tối ưu hóa việc tải trang và tải ứng dụng nhanh hơn.
+=======
+- Bundle Splitting: Chia các tệp mã thành các gói nhỏ hơn để tối ưu hóa việc tải trang và tải ứng dụng nhanh hơn.
+>>>>>>> dev
 
 Prerendering: Sử dụng prerendering để tạo trang tĩnh cho các trang quan trọng, giúp cải thiện SEO và hiệu suất.
 
 *NgIf và ngFor: Sử dụng cẩn thận với *ngIf và *ngFor để tránh tạo nhiều thành phần không cần thiết trong DOM.
+<<<<<<< HEAD
 
 Profiler và Lighthouse: Sử dụng các công cụ như Angular Profiler và Lighthouse để theo dõi và đánh giá hiệu năng ứng dụng của bạn.
 
 Server-Side Rendering (SSR): Nếu có yêu cầu, xem xét triển khai Server-Side Rendering để cải thiện SEO và hiệu suất.
 
 Bộ nhớ đệm và CDN: Sử dụng bộ nhớ đệm và Content Delivery Network (CDN) để tối ưu hóa việc tải tài nguyên như hình ảnh, mã JavaScript, và CSS.
+=======
+Profiler và Lighthouse: Sử dụng các công cụ như Angular Profiler và Lighthouse để theo dõi và đánh giá hiệu năng ứng dụng của bạn.
+Server-Side Rendering (SSR): Nếu có yêu cầu, xem xét triển khai Server-Side Rendering để cải thiện SEO và hiệu suất.
+Bộ nhớ đệm và CDN: Sử dụng bộ nhớ đệm và Content Delivery Network (CDN) để tối ưu hóa việc tải tài nguyên như hình ảnh, mã JavaScript, và CSS.
+## Science
+
+- virus github
+
+## Blog
+
+[Lazy load image][https://blog.webdevsimplified.com/2023-05/lazy-load-images/]
+
+# Problem
+
+- Blog personal                               100%   
+- Manager workflow
+- Manager blog technology                     (this week)
+- Manager folder driver               phục vụ cho workflow, book, music 
+- Manager learning eng
+- Manager lang
+- Manager algorithm
+- Manager books [https://eloquentjavascript.net/], []
+- App Music                                  
+  
+- Server code
+- Auth app
+- Secure app
+- Performance app
+- Setup map
+
+# Database
+
+- workflow
+  + id
+  + timeCreate
+  + timeModify
+  + treeLevel
+  + parentID
+  + title
+  + desc
+  + userID
+  + status
+  + dateStart
+  + dateEnd
+  + priority
+  + tag
+  + projectID
+  + subTaskID
+
+- blog tech
+  + 
+>>>>>>> dev

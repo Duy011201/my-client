@@ -1,1 +1,46 @@
+<<<<<<< HEAD
 <p>register works!</p>
+=======
+<app-loading *ngIf="isLoading"></app-loading>
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100 wrap-register bg-lazy">
+  <div class="wrap-content p-5 rounded">
+    <h2 class="text-center">Register</h2>
+    <form (submit)="onSubmit()">
+      <div class="form-group mt-10 position-relative">
+        <label htmlFor="inputUsername">Username</label>
+        <input [(ngModel)]="username" type="text" name="username" class="form-control" id="inputUsername"
+          placeholder="Username" required/>
+        <i class="icon-username position-absolute fas fa-user"></i>
+      </div>
+      <div class="form-group mt-10 position-relative">
+        <label htmlFor="inputEmail">Email address</label>
+        <input [(ngModel)]="email" type="email" class="form-control" id="inputEmail"
+          name="email" aria-describedby="emailHelp" placeholder="Email" required/>
+        <small id="emailHelp" class="form-text text-muted">
+          We'll never share your email with anyone else.
+        </small>
+        <i class="fas fa-envelope icon-email position-absolute"></i>
+      </div>
+      <div class="form-group mt-10 position-relative">
+        <label htmlFor="inputPassword">Password</label>
+        <input [(ngModel)]="password" type="password" name="password" class="form-control"
+          id="inputPassword" placeholder="Password" required/>
+        <i class="fas fa-lock icon-password position-absolute"></i>
+      </div>
+      <div class="form-check mt-10 font-16">
+        <input type="checkbox" class="form-check-input" id="checkbox" />
+        <small class="form-text text-muted form-check-label">
+          I agree to the terms & conditions
+        </small>
+      </div>
+      <button type="submit" class="btn btn-primary mt-10 w-100">
+        Register
+      </button>
+      <small class="form-text text-muted form-check-label mt-10 text-center d-block">
+        Already have an account?
+        <span class="text-decoration-underline ml-5" (click)="redirectTo(URL_LOGIN)">Login</span>
+      </small>
+    </form>
+  </div>
+</div>
+>>>>>>> dev
