@@ -1,19 +1,8 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
-})
-export class LoginComponent {
-
-=======
 import { Component, OnInit } from "@angular/core";
 import { error } from "@app/core/common/sweetalert2";
 import { isEmptyNullUndefined } from "@app/core/common/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import {CONST} from "@app/core/const/constant";
+import { CONST } from "@app/core/const/constant";
 
 @Component({
   selector: "app-login",
@@ -63,5 +52,4 @@ export class LoginComponent implements OnInit {
       }, 1000)
     }
   }
->>>>>>> dev
 }

@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
-})
-export class RegisterComponent {
-
-=======
 import { Component } from "@angular/core";
 import { error } from "@app/core/common/sweetalert2";
 import { ActivatedRoute, Router } from "@angular/router";
@@ -42,5 +31,4 @@ export class RegisterComponent {
   public onSubmit(): void {
     error("Có lỗi xảy ra!");
   }
->>>>>>> dev
 }

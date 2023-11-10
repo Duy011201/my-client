@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {Page404Component} from "../page404/page404.component";
-import {LoginComponent} from "./login/login.component";
-import {RegisterComponent} from "./register/register.component";
-
-const routes: Routes = [
-  {
-    path: 'login',
-    component: LoginComponent
-  },
-  {
-    path: 'register',
-    component: RegisterComponent
-  },
-  {
-    path: '**',
-    component: Page404Component
-  }
-=======
 import {NgModule} from "@angular/core";
 import {RouterModule, Routes} from "@angular/router";
 import {Page404Component} from "../page404/page404.component";
@@ -48,16 +27,11 @@ const routes: Routes = [
     title: 'not found page',
     component: Page404Component,
   },
->>>>>>> dev
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-<<<<<<< HEAD
-  exports: [RouterModule]
-=======
   exports: [RouterModule],
->>>>>>> dev
 })
 export class AuthRoutingModule {
 }
